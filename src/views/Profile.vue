@@ -4,8 +4,11 @@
       <img src="image/profile-placeholder.png" alt="profile">
       <div class="profile-stats">
         <h3>Erich Evander Da Costa</h3>
-        <p>Silver Hero</p>
-        <p class="points"><span>843 Exp</span></p>
+        <p class="period">Bergabung sejak Januari 2022</p>
+        <div class="member">
+          <p>Silver Hero</p>
+          <p class="points"><span>843 Exp</span></p>
+        </div>
         <p class="motivation"><i>Dengan kontribusimu, kamu telah mengurangi emisi karbon dunia.</i></p>
       </div>
     </div>
@@ -66,15 +69,29 @@ export default {
       .profile-stats {
         margin-top: 3em;
 
+        .period {
+          margin: .5em 0;
+        }
+
+        .member {
+          background-color: silver;
+          padding: .5em 1em;
+          border-radius: 1em;
+          display: inline-block;
+          margin: 1em 0;
+          
+          p {
+            span {
+              color: $orange;
+              font-weight: bold;
+            }
+          }
+        }
+
         h3 {
           font-size: 2em;
           margin-bottom: .2em;
-        }
-        p {
-          span {
-            color: $orange;
-            font-weight: bold;
-          }
+          color: black;
         }
         p.motivation {
           margin: 1em 0;
@@ -86,6 +103,7 @@ export default {
       padding: 0 2em;
       h4 {
         font-size: 1.2em;
+        color: black;
       }
       .products-stat {
 

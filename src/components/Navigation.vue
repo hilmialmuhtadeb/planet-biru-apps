@@ -1,9 +1,9 @@
 <template>
   <nav>
     <div class="left-side">
-      <h1>
-        <router-link to="/">Planet Biru</router-link>
-      </h1>
+      <router-link to="/">
+        <img src="planet-biru.png" alt="blibli-logo">
+      </router-link>
     </div>
     <div class="right-side">
       <ul class="nav-list">
@@ -39,6 +39,12 @@
       }
     }
 
+    .left-side {
+      img {
+        width: 8em;
+      }
+    }
+
     .right-side {
       display: flex;
       align-items: center;
@@ -47,7 +53,7 @@
         display: flex;
         list-style: none;
         .nav-list__item {
-          padding: 1em;
+          padding: 1em 0;
         }
       }
 

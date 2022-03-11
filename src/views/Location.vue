@@ -3,7 +3,7 @@
     <div class="banner">
       <h1>Lokasi Kotak Penyelamat</h1>
     </div>
-    <div class="wrapper">
+    <div class="location-wrapper">
       <p class="info">
         <span>&#8505;</span> Kotak penyelamat adalah dropbox untuk mengirimkan pakaian bekas milik planet biru squad.
       </p>
@@ -42,7 +42,7 @@ export default {
     text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.527);
   }
 
-  .wrapper {
+  .location-wrapper {
     padding: $container;
     
     .info {
@@ -64,7 +64,7 @@ export default {
     .location-card {
       border-radius: 1em;
       padding: 1em;
-      box-shadow: $box-shadow;
+      box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.2);
 
       h4 {
         color: $orange;
