@@ -1,0 +1,32 @@
+$blue: #0095da;
+$grey: #f1f1f1;
+$white: #fff;
+$orange: #f37021;
+$black: #000;
+$dark-blue: #151D3B;
+$secondary: rgb(97, 97, 97);
+$dark-green: #146356;
+$box-shadow: 0 0 30px -4px rgba(0, 0, 0, 0.3);
+$container: 0em 8em;
+
+@font-face {
+  font-display: fallback;
+  font-family: 'effra';
+  src: url('https://www.static-src.com/fonts/1.0.0/effra/effra-regular.woff2') format('woff2'),
+    url('https://www.static-src.com/fonts/1.0.0/effra/effra-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: 'efframedium';
+  src: url('https://www.static-src.com/fonts/1.0.0/effra/effraMedium-regular.woff2') format('woff2'),
+    url('https://www.static-src.com/fonts/1.0.0/effra/efframedium-regular.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'effra', 'efframedium', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
